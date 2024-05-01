@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  bookstoremanagementnestjs:
+    container_name: bookStoreManagementNestjs
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3001:3000'
+    depends_on:
+      - postgres
+      - rabbitmq
+  postgres:
+    container_name: bookStoreManagementPostgresSQL
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: your_username
+      POSTGRES_PASSWORD: your_password
+      POSTGRES_DB: bookstore
+    ports:
+      - '5432:5432'
+  rabbitmq:
+    container_name: bookStoreManagementRabbitMQ
+    image: rabbitmq
+    ports:
+      - '5672:5672'
+      - '15672:15672'
