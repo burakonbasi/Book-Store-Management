@@ -13,7 +13,10 @@ Docker container list [ NestJS - PostgreSQL - RabbitMQ ]
 
 ```bash
 docker-compose up 
+```
 <br>
+
+```bash
 docker ps -a
 ```
 <br>
