@@ -6,17 +6,21 @@ E-Adam firması için Kitap Mağazası Yönetimi uygulaması geliştirmeyi hedef
 ## Technologies
 
 Docker - PostgreSQL - NestJs - TypeScript
-docker container list [ NestJS - PostgreSQL - RabbitMQ ]
+<br>
+Docker container list [ NestJS - PostgreSQL - RabbitMQ ]
 
 ## Establishing the Working Environment
 
 docker-compose up 
+<br>
 docker ps -a
-
+<br>
 NestJS  ports:
       - '3001:3000'
+<br>
 PostgreSQL ports:
       - '5433:5432'
+<br>      
  RabbitMQ  ports:
       - '5672:5672'
       - '15672:15672'
