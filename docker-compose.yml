@@ -15,11 +15,11 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: your_username
-      POSTGRES_PASSWORD: your_password
+      POSTGRES_USER: "bookstore_postgres"
+      POSTGRES_PASSWORD: "Burak1995"
       POSTGRES_DB: bookstore
     ports:
-      - '5432:5432'
+      - '5433:5432'
   rabbitmq:
     container_name: bookStoreManagementRabbitMQ
     image: rabbitmq
