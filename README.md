@@ -11,9 +11,11 @@ Docker container list [ NestJS - PostgreSQL - RabbitMQ ]
 
 ## Establishing the Working Environment
 
+``bash
 docker-compose up 
 <br>
 docker ps -a
+```
 <br>
 NestJS  ports:
       - '3001:3000'
