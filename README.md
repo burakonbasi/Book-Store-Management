@@ -11,7 +11,7 @@ Docker container list [ NestJS - PostgreSQL - RabbitMQ ]
 
 ## Establishing the Working Environment
 
-``bash
+```bash
 docker-compose up 
 <br>
 docker ps -a
